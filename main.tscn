@@ -1,13 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://birx6b6f8xpbd"]
+[gd_scene load_steps=2 format=3 uid="uid://chdokihuhjjb5"]
 
-[ext_resource type="Texture2D" uid="uid://gntx5k8it2wm" path="res://icon.svg" id="1_g712m"]
+[ext_resource type="Texture2D" uid="uid://dh7k4e4glkjlt" path="res://icon.svg" id="1_h3fis"]
 
 [node name="Main" type="Node"]
 
-[node name="GDExample" type="GDExample" parent="."]
-amplitude = 300.0
-speed = 6.0
-position = Vector2(564.412, 307.102)
-texture = ExtResource("1_g712m")
-centered = false
-script = ExtResource("3_4gi83")
+[node name="HalfAssIT" type="HalfAssIT" parent="."]
+amplitude = 200.0
+speed = 3.0
+position = Vector2(276.934, 293.995)
+texture = ExtResource("1_h3fis")
