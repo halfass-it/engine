@@ -1,7 +1,0 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717659787
-GDExample.gd::GDScript::-1::1717659655::0::1::::<>GDExample<>::
-icon.svg::CompressedTexture2D::449166261412733724::1717652789::1717657411::1::::<><>::
-main.tscn::PackedScene::2984477805745541385::1717659656::0::1::::<><>::uid://gntx5k8it2wm::::res://icon.svg<>res://GDExample.gd
-::res://bin/::1717659375
-gdexample.gdextension::GDExtension::-1::1717653779::0::1::::<><>::
