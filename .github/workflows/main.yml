@@ -1,0 +1,12 @@
+name: Main Workflow
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  discord-updates:
+    uses: halfass-it/.github/workflows/discord-updates.yml@main
+
