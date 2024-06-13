@@ -1,4 +1,6 @@
+liblibhalfassit.windows.template_debug.x86_64.a
+libhalfassit.windows.template_debug.x86_64.dll
 libhalfassit.linux.template_debug.x86_64.so
-bin/libhalfassit.linux.template_debug.x86_64.so
+libhalfassit.linux.template_debug.x86_64.so
 # Godot 4+ specific ignores
 .godot/
