@@ -7,5 +7,5 @@
 [node name="HalfAssIT" type="HalfAssIT" parent="."]
 amplitude = 200.0
 speed = 3.0
-position = Vector2(276.934, 293.995)
+position = Vector2(221.329, 0.64184)
 texture = ExtResource("1_h3fis")
