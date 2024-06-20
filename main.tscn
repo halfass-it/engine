@@ -7,17 +7,17 @@
 [node name="Main" type="Node2D"]
 script = ExtResource("1_3dcyu")
 
-[node name="00007-90782364" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(541, 960)
 scale = Vector2(1.00185, 1)
 texture = ExtResource("1_4wtpk")
 
-[node name="SpaceStationInspiredInGothicCastle,InSpace,Isolated2" type="Sprite2D" parent="."]
+[node name="SpaceStation" type="Sprite2D" parent="."]
 position = Vector2(545, 960)
 scale = Vector2(0.578125, 0.578125)
 texture = ExtResource("2_va2ik")
 
-[node name="Button" type="Button" parent="SpaceStationInspiredInGothicCastle,InSpace,Isolated2"]
+[node name="Button" type="Button" parent="SpaceStation"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -28,4 +28,4 @@ offset_bottom = -512.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[connection signal="pressed" from="SpaceStationInspiredInGothicCastle,InSpace,Isolated2/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SpaceStation/Button" to="." method="_on_button_pressed"]
