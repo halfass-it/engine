@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b02r0cstxj575"]
+
+[ext_resource type="Texture2D" uid="uid://colrop2aoq146" path="res://56e2bb22-77b6-4f12-a1b0-999c9a6e45aa.jpeg" id="1_g8xgd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="56e2Bb22-77b6-4f12-a1b0-999c9a6e45Aa" type="Sprite2D" parent="."]
+position = Vector2(960, 960)
+scale = Vector2(1.875, 1.875)
+texture = ExtResource("1_g8xgd")
