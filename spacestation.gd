@@ -11,5 +11,6 @@ func _process(delta):
 	pass
 
 
-func _on_station_btn_released():
-	get_tree().change_scene_to_file("res://spacestation.tscn")
+func _on_back_btn_released():
+	get_tree().change_scene_to_file("res://main.tscn")
+

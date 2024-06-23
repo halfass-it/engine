@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://chdokihuhjjb5"]
+[gd_scene load_steps=6 format=3 uid="uid://chdokihuhjjb5"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_3dcyu"]
 [ext_resource type="Texture2D" uid="uid://c2r4cdf63en6k" path="res://00007-90782364.png" id="1_4wtpk"]
 [ext_resource type="Texture2D" uid="uid://bkr6jvlbxpev2" path="res://space station inspired in Gothic Castle, in space, isolated_2.png" id="2_va2ik"]
+[ext_resource type="Texture2D" uid="uid://bjok50ivk4mmr" path="res://BTNs/Settings_BTN.png" id="4_yrgae"]
+[ext_resource type="Texture2D" uid="uid://bklxlr0i46f5u" path="res://BTNs_Active/Settings_BTN.png" id="5_rv2pf"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_3dcyu")
@@ -12,20 +14,17 @@ position = Vector2(541, 960)
 scale = Vector2(1.00185, 1)
 texture = ExtResource("1_4wtpk")
 
-[node name="SpaceStation" type="Sprite2D" parent="."]
-position = Vector2(545, 960)
-scale = Vector2(0.578125, 0.578125)
-texture = ExtResource("2_va2ik")
+[node name="StationBTN" type="TouchScreenButton" parent="."]
+position = Vector2(296, 576)
+scale = Vector2(0.539063, 0.539063)
+texture_normal = ExtResource("2_va2ik")
+texture_pressed = ExtResource("2_va2ik")
 
-[node name="Button" type="Button" parent="SpaceStation"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -512.0
-offset_top = -512.0
-offset_right = -512.0
-offset_bottom = -512.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="SettingsBTN" type="TouchScreenButton" parent="."]
+position = Vector2(992, 8)
+scale = Vector2(0.390476, 0.390476)
+texture_normal = ExtResource("4_yrgae")
+texture_pressed = ExtResource("5_rv2pf")
 
-[connection signal="pressed" from="SpaceStation/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="StationBTN" to="." method="_on_button_pressed"]
+[connection signal="released" from="StationBTN" to="." method="_on_station_btn_released"]
