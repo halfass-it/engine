@@ -13,3 +13,15 @@ func _process(delta):
 
 func _on_station_btn_released():
 	get_tree().change_scene_to_file("res://spacestation.tscn")
+
+
+func _on_research_btn_released():
+	get_tree().change_scene_to_file("res://Research.tscn")
+
+
+func _on_fleet_btn_released():
+	get_tree().change_scene_to_file("res://Fleet.tscn")
+
+
+func _on_shop_btn_released():
+	get_tree().change_scene_to_file("res://Shop.tscn")

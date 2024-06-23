@@ -1,10 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://chdokihuhjjb5"]
+[gd_scene load_steps=12 format=3 uid="uid://chdokihuhjjb5"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_3dcyu"]
 [ext_resource type="Texture2D" uid="uid://c2r4cdf63en6k" path="res://00007-90782364.png" id="1_4wtpk"]
 [ext_resource type="Texture2D" uid="uid://bkr6jvlbxpev2" path="res://space station inspired in Gothic Castle, in space, isolated_2.png" id="2_va2ik"]
 [ext_resource type="Texture2D" uid="uid://bjok50ivk4mmr" path="res://BTNs/Settings_BTN.png" id="4_yrgae"]
 [ext_resource type="Texture2D" uid="uid://bklxlr0i46f5u" path="res://BTNs_Active/Settings_BTN.png" id="5_rv2pf"]
+[ext_resource type="Texture2D" uid="uid://bnljs8i7vyai8" path="res://BTNs/Shop_BTN.png" id="6_shtg2"]
+[ext_resource type="Texture2D" uid="uid://dwhkpg5qcwk1e" path="res://BTNs_Active/Shop_BTN.png" id="7_j28fn"]
+[ext_resource type="Texture2D" uid="uid://qh22ku2tpenq" path="res://BTNs/Hangar_BTN.png" id="8_gebm5"]
+[ext_resource type="Texture2D" uid="uid://cm46knmxfpvrk" path="res://BTNs_Active/Hangar_BTN.png" id="9_dvmob"]
+[ext_resource type="Texture2D" uid="uid://bg56aah6h5450" path="res://BTNs/Upgrade_BTN.png" id="10_s5j37"]
+[ext_resource type="Texture2D" uid="uid://pp4p6vui8hfb" path="res://BTNs_Active/Upgrade_BTN.png" id="11_ndnto"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_3dcyu")
@@ -14,17 +20,38 @@ position = Vector2(541, 960)
 scale = Vector2(1.00185, 1)
 texture = ExtResource("1_4wtpk")
 
-[node name="StationBTN" type="TouchScreenButton" parent="."]
-position = Vector2(296, 576)
-scale = Vector2(0.539063, 0.539063)
-texture_normal = ExtResource("2_va2ik")
-texture_pressed = ExtResource("2_va2ik")
-
 [node name="SettingsBTN" type="TouchScreenButton" parent="."]
 position = Vector2(992, 8)
 scale = Vector2(0.390476, 0.390476)
 texture_normal = ExtResource("4_yrgae")
 texture_pressed = ExtResource("5_rv2pf")
 
+[node name="StationBTN" type="TouchScreenButton" parent="."]
+position = Vector2(296, 576)
+scale = Vector2(0.539063, 0.539063)
+texture_normal = ExtResource("2_va2ik")
+texture_pressed = ExtResource("2_va2ik")
+
+[node name="ShopBTN" type="TouchScreenButton" parent="."]
+position = Vector2(8, 1802)
+scale = Vector2(0.533333, 0.533333)
+texture_normal = ExtResource("6_shtg2")
+texture_pressed = ExtResource("7_j28fn")
+
+[node name="FleetBTN" type="TouchScreenButton" parent="."]
+position = Vector2(128, 1802)
+scale = Vector2(0.533333, 0.533333)
+texture_normal = ExtResource("8_gebm5")
+texture_pressed = ExtResource("9_dvmob")
+
+[node name="ResearchBTN" type="TouchScreenButton" parent="."]
+position = Vector2(248, 1802)
+scale = Vector2(0.533333, 0.533333)
+texture_normal = ExtResource("10_s5j37")
+texture_pressed = ExtResource("11_ndnto")
+
 [connection signal="pressed" from="StationBTN" to="." method="_on_button_pressed"]
 [connection signal="released" from="StationBTN" to="." method="_on_station_btn_released"]
+[connection signal="released" from="ShopBTN" to="." method="_on_shop_btn_released"]
+[connection signal="released" from="FleetBTN" to="." method="_on_fleet_btn_released"]
+[connection signal="released" from="ResearchBTN" to="." method="_on_research_btn_released"]
