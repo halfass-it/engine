@@ -1,16 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://odxt7f1eaivi"]
+[gd_scene load_steps=5 format=3 uid="uid://odxt7f1eaivi"]
 
 [ext_resource type="Script" path="res://Research.gd" id="1_8vc5g"]
 [ext_resource type="Texture2D" uid="uid://bvbtx41iuiywi" path="res://BTNs/Backward_BTN.png" id="2_b2qi2"]
 [ext_resource type="Texture2D" uid="uid://bm402u23niysp" path="res://BTNs_Active/Backward_BTN.png" id="3_pydw4"]
+[ext_resource type="Texture2D" uid="uid://cfpf8q8nrfam" path="res://BlueBG.png" id="4_6svdn"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Research" type="Node2D"]
 script = ExtResource("1_8vc5g")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 5344.0
-offset_bottom = 2896.0
-color = Color(0.0776907, 0.329823, 0.685689, 0.780392)
 
 [node name="BackBTN" type="TouchScreenButton" parent="."]
 position = Vector2(8, 8)
@@ -18,4 +14,33 @@ scale = Vector2(0.571429, 0.571429)
 texture_normal = ExtResource("2_b2qi2")
 texture_pressed = ExtResource("3_pydw4")
 
+[node name="FleetResearchBTN" type="TouchScreenButton" parent="."]
+position = Vector2(327, 192)
+scale = Vector2(0.0730859, 0.0668058)
+texture_normal = ExtResource("4_6svdn")
+texture_pressed = ExtResource("4_6svdn")
+
+[node name="FleetResearchLBL" type="RichTextLabel" parent="."]
+offset_left = 392.0
+offset_top = 248.0
+offset_right = 768.0
+offset_bottom = 384.0
+theme_override_font_sizes/normal_font_size = 40
+text = "Fleet Research"
+
+[node name="WeaponsResearchBTN" type="TouchScreenButton" parent="."]
+position = Vector2(320, 578)
+scale = Vector2(0.0742459, 0.0668059)
+texture_normal = ExtResource("4_6svdn")
+texture_pressed = ExtResource("4_6svdn")
+
+[node name="WeaponsResearchLBL" type="RichTextLabel" parent="."]
+offset_left = 384.0
+offset_top = 648.0
+offset_right = 760.0
+offset_bottom = 784.0
+theme_override_font_sizes/normal_font_size = 40
+text = "Weapons Research"
+
 [connection signal="released" from="BackBTN" to="." method="_on_back_btn_released"]
+[connection signal="released" from="FleetResearchBTN" to="." method="_on_fleet_research_btn_released"]
