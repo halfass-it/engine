@@ -13,8 +13,6 @@ const MAX_Y = 3500
 func _ready():
 	# Ensure the node is in the top layer and receives input
 	set_process_input(true)
-	var viewport_size = get_viewport_rect().size
-	print(viewport_size)
 
 func _input(event):
 	if event is InputEventScreenTouch:
