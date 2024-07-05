@@ -1,5 +1,5 @@
 extends Node2D
-
+@onready var popup = $TouchScreenButton/Window
 # Variables to track touch state
 var touch_start_position: Vector2
 var camera_start_position: Vector2
@@ -39,3 +39,13 @@ func _input(event):
 
 func _on_back_btn_released():
 	get_tree().change_scene_to_file("res://Research.tscn")
+
+
+func _on_touch_screen_button_pressed():
+	popup.popup_centered()
+
+
+
+
+func _on_window_close_requested():
+	popup.hide()

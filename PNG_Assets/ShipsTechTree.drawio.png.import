@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://colrop2aoq146"
-path="res://.godot/imported/56e2bb22-77b6-4f12-a1b0-999c9a6e45aa.jpeg-474716ae0a913729b55f347fef031646.ctex"
+uid="uid://c3dmkvwdkh3hf"
+path="res://.godot/imported/ShipsTechTree.drawio.png-908f34ee2fb69be2af341841c0224ce5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://56e2bb22-77b6-4f12-a1b0-999c9a6e45aa.jpeg"
-dest_files=["res://.godot/imported/56e2bb22-77b6-4f12-a1b0-999c9a6e45aa.jpeg-474716ae0a913729b55f347fef031646.ctex"]
+source_file="res://PNG_Assets/ShipsTechTree.drawio.png"
+dest_files=["res://.godot/imported/ShipsTechTree.drawio.png-908f34ee2fb69be2af341841c0224ce5.ctex"]
 
 [params]
 

@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://3d4mw0x4rlyd"]
+
+[ext_resource type="Script" path="res://Scenes/battle.gd" id="1_aajw8"]
+[ext_resource type="Texture2D" uid="uid://dh7k4e4glkjlt" path="res://icon.svg" id="1_g8jcj"]
+[ext_resource type="PackedScene" uid="uid://v53kydv2qgta" path="res://3D_Models/3dobject1.tscn" id="3_2opfa"]
+[ext_resource type="PackedScene" uid="uid://vbt8xvc5qprp" path="res://3D_Models/3dobject2.tscn" id="4_1hgry"]
+
+[node name="Battle" type="Node2D"]
+script = ExtResource("1_aajw8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(547, 934.5)
+scale = Vector2(7.89063, 14.2109)
+texture = ExtResource("1_g8jcj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(561, 366)
+scale = Vector2(2.52344, 1.89063)
+texture = ExtResource("1_g8jcj")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(500, 300)
+
+[node name="Node3D" parent="SubViewport" instance=ExtResource("3_2opfa")]
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(570, 1600)
+scale = Vector2(2.23646, 1.9483)
+texture = ExtResource("1_g8jcj")
+
+[node name="SubViewport2" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(500, 300)
+
+[node name="Node3D" parent="SubViewport2" instance=ExtResource("4_1hgry")]

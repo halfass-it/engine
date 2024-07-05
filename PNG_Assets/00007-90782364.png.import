@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3dmkvwdkh3hf"
-path="res://.godot/imported/ShipsTechTree.drawio.png-4cbbc0a77d5ca1ef58c4904ab309aef1.ctex"
+uid="uid://c2r4cdf63en6k"
+path="res://.godot/imported/00007-90782364.png-0f0766e5d01a1434f1f54b98f0e927e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ShipsTechTree.drawio.png"
-dest_files=["res://.godot/imported/ShipsTechTree.drawio.png-4cbbc0a77d5ca1ef58c4904ab309aef1.ctex"]
+source_file="res://PNG_Assets/00007-90782364.png"
+dest_files=["res://.godot/imported/00007-90782364.png-0f0766e5d01a1434f1f54b98f0e927e8.ctex"]
 
 [params]
 

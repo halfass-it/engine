@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfpf8q8nrfam"
-path="res://.godot/imported/BlueBG.png-43922faf86218e3871c18cf1f673edbc.ctex"
+uid="uid://bkr6jvlbxpev2"
+path="res://.godot/imported/space station inspired in Gothic Castle, in space, isolated_2.png-b6a9818bfab07e4a09cc53e86d612fd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BlueBG.png"
-dest_files=["res://.godot/imported/BlueBG.png-43922faf86218e3871c18cf1f673edbc.ctex"]
+source_file="res://PNG_Assets/space station inspired in Gothic Castle, in space, isolated_2.png"
+dest_files=["res://.godot/imported/space station inspired in Gothic Castle, in space, isolated_2.png-b6a9818bfab07e4a09cc53e86d612fd1.ctex"]
 
 [params]
 
