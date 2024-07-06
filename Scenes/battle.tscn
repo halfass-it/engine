@@ -43,6 +43,7 @@ offset_bottom = 235.0
 step = 1.0
 
 [node name="Healthbar1Label" type="Label" parent="Healthbar1"]
+layout_mode = 0
 offset_top = -24.0
 offset_right = 216.0
 offset_bottom = -1.0
@@ -56,6 +57,7 @@ offset_bottom = 1459.0
 step = 1.0
 
 [node name="Healthbar2Label" type="Label" parent="Healthbar2"]
+layout_mode = 0
 offset_top = -24.0
 offset_right = 216.0
 offset_bottom = -1.0
