@@ -38,7 +38,7 @@ shape_centered = false
 shape_visible = false
 
 [node name="Window" type="Window" parent="TouchScreenButton"]
-position = Vector2i(500, 500)
+position = Vector2i(500, 131)
 size = Vector2i(500, 500)
 
 [connection signal="released" from="BackBTN" to="." method="_on_back_btn_released"]
